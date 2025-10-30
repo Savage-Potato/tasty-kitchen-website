@@ -5,7 +5,7 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   // ✅ Must exactly match your GitHub repo name:
-  base: mode === "production" ? "/tasty-kitchen-website/" : "/",
+base: mode === 'production' ? '/tasty-kitchen-website/' : '/',
   server: {
     host: "::",
     port: 8080,
