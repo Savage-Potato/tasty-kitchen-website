@@ -4,14 +4,12 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // production base path for GitHub Pages (update to match your repo name)
-  base: mode === 'production' ? '/the-tasty-kitchen/' : '/',
+  // ✅ Must exactly match your GitHub repo name:
+  base: mode === "production" ? "/tasty-kitchen-website/" : "/",
   server: {
     host: "::",
     port: 8080,
   },
-  // Use only the official React plugin. Removed the third-party tagging plugin to keep
-  // the build configuration minimal and brand-neutral.
   plugins: [react()],
   resolve: {
     alias: {
